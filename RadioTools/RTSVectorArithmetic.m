@@ -122,7 +122,7 @@
     return A; // A was set to the last result from vDSP_zvmul
 }
 
-// TODO: consolodate this and the previous method.
+// TODO: consolidate this and the previous method.
 
 - (RTSFloatVector *)internalFloatOperation:(NSArray *)input
 {

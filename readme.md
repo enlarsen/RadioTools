@@ -1,7 +1,7 @@
 # Radio Tools
 
 Objective C library for using the RTL SDR radio dongles. Currently demos implementing
-an FM radio that is tuned to 88.9 MHz Portland Classical (seel RTSRTLRadio.m).
+an FM radio that is tuned to 89.9 MHz Portland Classical (seel RTSRTLRadio.m).
 
 The IIR filter isn't complete yet, and more work needs to be done to receive stereo
 FM. Includes code to demodulate FM, FIR and IIR filters, vector (complex and real)
