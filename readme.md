@@ -12,7 +12,7 @@ Uses Apple's vDSP library extensively.
 Sample usage for FM (single channel) uses a dataReceived delegate that the library
 calls whenever a data buffer has arrived from the RTL dongle:
 
-``objective-c
+```objective-c
 - (void)setup
 {
     self.conditioner = [[RTSInputConditioner alloc] init];
@@ -36,4 +36,4 @@ calls whenever a data buffer has arrived from the RTL dongle:
 
     [self.audioOutput playSoundBuffer:finalDecimated];
 }
-``
+```
