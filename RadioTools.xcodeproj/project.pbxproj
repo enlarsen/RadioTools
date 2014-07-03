@@ -7,14 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B3AF3AEA185E206900BD7747 /* RTSIIRFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = B3AF3AE8185E206900BD7747 /* RTSIIRFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3AF3AEB185E206900BD7747 /* RTSIIRFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AF3AE9185E206900BD7747 /* RTSIIRFilter.m */; };
+		B3AF3B15185E91C900BD7747 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3AF3B14185E91C900BD7747 /* AudioToolbox.framework */; };
+		B3AF3B17185E932B00BD7747 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3AF3B16185E932B00BD7747 /* IOKit.framework */; };
+		B3AF3B8C185F80FD00BD7747 /* RTSDataReceived.h in Headers */ = {isa = PBXBuildFile; fileRef = B3AF3B8B185F80FD00BD7747 /* RTSDataReceived.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3AF3B92185FAF9600BD7747 /* RTSInputConditioner.h in Headers */ = {isa = PBXBuildFile; fileRef = B3AF3B90185FAF9600BD7747 /* RTSInputConditioner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3AF3B93185FAF9600BD7747 /* RTSInputConditioner.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AF3B91185FAF9600BD7747 /* RTSInputConditioner.m */; };
+		B3AF3B96185FC0F900BD7747 /* RadioTools.h in Headers */ = {isa = PBXBuildFile; fileRef = B3AF3B95185FBFF500BD7747 /* RadioTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B3D284F318563A5300A0C898 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D284F218563A5300A0C898 /* Cocoa.framework */; };
 		B3D284FD18563A5300A0C898 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B3D284FB18563A5300A0C898 /* InfoPlist.strings */; };
-		B3D2850118563A5400A0C898 /* RadioTools.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D2850018563A5400A0C898 /* RadioTools.m */; };
 		B3D2850818563A5400A0C898 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D2850718563A5400A0C898 /* XCTest.framework */; };
 		B3D2850918563A5400A0C898 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D284F218563A5300A0C898 /* Cocoa.framework */; };
 		B3D2850C18563A5400A0C898 /* RadioTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D284EF18563A5300A0C898 /* RadioTools.framework */; };
 		B3D2851218563A5400A0C898 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B3D2851018563A5400A0C898 /* InfoPlist.strings */; };
 		B3D2851418563A5400A0C898 /* RadioToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D2851318563A5400A0C898 /* RadioToolsTests.m */; };
+		B3D2852018563AFD00A0C898 /* RTSFMDemodulator.h in Headers */ = {isa = PBXBuildFile; fileRef = B3D2851E18563AFD00A0C898 /* RTSFMDemodulator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3D2852118563AFD00A0C898 /* RTSFMDemodulator.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D2851F18563AFD00A0C898 /* RTSFMDemodulator.m */; };
+		B3D2852418563B2000A0C898 /* RTSDecimator.h in Headers */ = {isa = PBXBuildFile; fileRef = B3D2852218563B2000A0C898 /* RTSDecimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3D2852518563B2000A0C898 /* RTSDecimator.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D2852318563B2000A0C898 /* RTSDecimator.m */; };
+		B3D2852818563B3500A0C898 /* RTSFIRFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = B3D2852618563B3500A0C898 /* RTSFIRFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3D2852918563B3500A0C898 /* RTSFIRFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D2852718563B3500A0C898 /* RTSFIRFilter.m */; };
+		B3D2852C18563BCE00A0C898 /* RTSAudioOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = B3D2852A18563BCE00A0C898 /* RTSAudioOutput.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3D2852D18563BCE00A0C898 /* RTSAudioOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D2852B18563BCE00A0C898 /* RTSAudioOutput.m */; };
+		B3D285301856421D00A0C898 /* RTSRTLRadio.h in Headers */ = {isa = PBXBuildFile; fileRef = B3D2852E1856421D00A0C898 /* RTSRTLRadio.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3D285311856421D00A0C898 /* RTSRTLRadio.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D2852F1856421D00A0C898 /* RTSRTLRadio.m */; };
+		B3D28534185646C600A0C898 /* RTSComplexVector.h in Headers */ = {isa = PBXBuildFile; fileRef = B3D28532185646C600A0C898 /* RTSComplexVector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3D28535185646C600A0C898 /* RTSComplexVector.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D28533185646C600A0C898 /* RTSComplexVector.m */; };
+		B3D2853818578CF900A0C898 /* RTSFloatVector.h in Headers */ = {isa = PBXBuildFile; fileRef = B3D2853618578CF900A0C898 /* RTSFloatVector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3D2853918578CF900A0C898 /* RTSFloatVector.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D2853718578CF900A0C898 /* RTSFloatVector.m */; };
+		B3D2853C1858D35600A0C898 /* RTSFlowGraph.h in Headers */ = {isa = PBXBuildFile; fileRef = B3D2853A1858D35600A0C898 /* RTSFlowGraph.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3D2853D1858D35700A0C898 /* RTSFlowGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D2853B1858D35600A0C898 /* RTSFlowGraph.m */; };
+		B3D2853F1858D98300A0C898 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D2853E1858D98300A0C898 /* Accelerate.framework */; };
+		B3F831931867B6150088D934 /* RTSMultiplyVectors.h in Headers */ = {isa = PBXBuildFile; fileRef = B3F831911867B6150088D934 /* RTSMultiplyVectors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3F831941867B6150088D934 /* RTSMultiplyVectors.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F831921867B6150088D934 /* RTSMultiplyVectors.m */; };
+		B3F831971867B62A0088D934 /* RTSAddVectors.h in Headers */ = {isa = PBXBuildFile; fileRef = B3F831951867B62A0088D934 /* RTSAddVectors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3F831981867B62A0088D934 /* RTSAddVectors.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F831961867B62A0088D934 /* RTSAddVectors.m */; };
+		B3F8319F1867B6550088D934 /* RTSFMDeemphasis.h in Headers */ = {isa = PBXBuildFile; fileRef = B3F8319D1867B6550088D934 /* RTSFMDeemphasis.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3F831A01867B6550088D934 /* RTSFMDeemphasis.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F8319E1867B6550088D934 /* RTSFMDeemphasis.m */; };
+		B3F831A31868C69B0088D934 /* RTSVectorArithmetic.h in Headers */ = {isa = PBXBuildFile; fileRef = B3F831A11868C69B0088D934 /* RTSVectorArithmetic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3F831A41868C69B0088D934 /* RTSVectorArithmetic.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F831A21868C69B0088D934 /* RTSVectorArithmetic.m */; };
+		B3F831A71868E09A0088D934 /* RTSSubtractVectors.h in Headers */ = {isa = PBXBuildFile; fileRef = B3F831A51868E09A0088D934 /* RTSSubtractVectors.h */; };
+		B3F831A81868E09A0088D934 /* RTSSubtractVectors.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F831A61868E09A0088D934 /* RTSSubtractVectors.m */; };
+		B3F831AB1868E88D0088D934 /* RTSMultiplyConstant.h in Headers */ = {isa = PBXBuildFile; fileRef = B3F831A91868E88D0088D934 /* RTSMultiplyConstant.h */; };
+		B3F831AC1868E88D0088D934 /* RTSMultiplyConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F831AA1868E88D0088D934 /* RTSMultiplyConstant.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +64,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B373FA0D1965C94800D11F18 /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = SOURCE_ROOT; };
+		B3AF3AE8185E206900BD7747 /* RTSIIRFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTSIIRFilter.h; sourceTree = "<group>"; };
+		B3AF3AE9185E206900BD7747 /* RTSIIRFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTSIIRFilter.m; sourceTree = "<group>"; };
+		B3AF3B14185E91C900BD7747 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B3AF3B16185E932B00BD7747 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		B3AF3B8B185F80FD00BD7747 /* RTSDataReceived.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTSDataReceived.h; sourceTree = "<group>"; };
+		B3AF3B90185FAF9600BD7747 /* RTSInputConditioner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTSInputConditioner.h; sourceTree = "<group>"; };
+		B3AF3B91185FAF9600BD7747 /* RTSInputConditioner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTSInputConditioner.m; sourceTree = "<group>"; };
+		B3AF3B95185FBFF500BD7747 /* RadioTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RadioTools.h; sourceTree = "<group>"; };
 		B3D284EF18563A5300A0C898 /* RadioTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RadioTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3D284F218563A5300A0C898 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		B3D284F518563A5300A0C898 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -36,13 +81,40 @@
 		B3D284FA18563A5300A0C898 /* RadioTools-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RadioTools-Info.plist"; sourceTree = "<group>"; };
 		B3D284FC18563A5300A0C898 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B3D284FE18563A5300A0C898 /* RadioTools-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RadioTools-Prefix.pch"; sourceTree = "<group>"; };
-		B3D284FF18563A5300A0C898 /* RadioTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RadioTools.h; sourceTree = "<group>"; };
-		B3D2850018563A5400A0C898 /* RadioTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RadioTools.m; sourceTree = "<group>"; };
 		B3D2850618563A5400A0C898 /* RadioToolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadioToolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3D2850718563A5400A0C898 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B3D2850F18563A5400A0C898 /* RadioToolsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RadioToolsTests-Info.plist"; sourceTree = "<group>"; };
 		B3D2851118563A5400A0C898 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B3D2851318563A5400A0C898 /* RadioToolsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RadioToolsTests.m; sourceTree = "<group>"; };
+		B3D2851E18563AFD00A0C898 /* RTSFMDemodulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTSFMDemodulator.h; sourceTree = "<group>"; };
+		B3D2851F18563AFD00A0C898 /* RTSFMDemodulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTSFMDemodulator.m; sourceTree = "<group>"; };
+		B3D2852218563B2000A0C898 /* RTSDecimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTSDecimator.h; sourceTree = "<group>"; };
+		B3D2852318563B2000A0C898 /* RTSDecimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTSDecimator.m; sourceTree = "<group>"; };
+		B3D2852618563B3500A0C898 /* RTSFIRFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTSFIRFilter.h; sourceTree = "<group>"; };
+		B3D2852718563B3500A0C898 /* RTSFIRFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTSFIRFilter.m; sourceTree = "<group>"; };
+		B3D2852A18563BCE00A0C898 /* RTSAudioOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTSAudioOutput.h; sourceTree = "<group>"; };
+		B3D2852B18563BCE00A0C898 /* RTSAudioOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTSAudioOutput.m; sourceTree = "<group>"; };
+		B3D2852E1856421D00A0C898 /* RTSRTLRadio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTSRTLRadio.h; sourceTree = "<group>"; };
+		B3D2852F1856421D00A0C898 /* RTSRTLRadio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTSRTLRadio.m; sourceTree = "<group>"; };
+		B3D28532185646C600A0C898 /* RTSComplexVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTSComplexVector.h; sourceTree = "<group>"; };
+		B3D28533185646C600A0C898 /* RTSComplexVector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTSComplexVector.m; sourceTree = "<group>"; };
+		B3D2853618578CF900A0C898 /* RTSFloatVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTSFloatVector.h; sourceTree = "<group>"; };
+		B3D2853718578CF900A0C898 /* RTSFloatVector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTSFloatVector.m; sourceTree = "<group>"; };
+		B3D2853A1858D35600A0C898 /* RTSFlowGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTSFlowGraph.h; sourceTree = "<group>"; };
+		B3D2853B1858D35600A0C898 /* RTSFlowGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTSFlowGraph.m; sourceTree = "<group>"; };
+		B3D2853E1858D98300A0C898 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		B3F831911867B6150088D934 /* RTSMultiplyVectors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTSMultiplyVectors.h; sourceTree = "<group>"; };
+		B3F831921867B6150088D934 /* RTSMultiplyVectors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTSMultiplyVectors.m; sourceTree = "<group>"; };
+		B3F831951867B62A0088D934 /* RTSAddVectors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTSAddVectors.h; sourceTree = "<group>"; };
+		B3F831961867B62A0088D934 /* RTSAddVectors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTSAddVectors.m; sourceTree = "<group>"; };
+		B3F8319D1867B6550088D934 /* RTSFMDeemphasis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTSFMDeemphasis.h; sourceTree = "<group>"; };
+		B3F8319E1867B6550088D934 /* RTSFMDeemphasis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTSFMDeemphasis.m; sourceTree = "<group>"; };
+		B3F831A11868C69B0088D934 /* RTSVectorArithmetic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTSVectorArithmetic.h; sourceTree = "<group>"; };
+		B3F831A21868C69B0088D934 /* RTSVectorArithmetic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTSVectorArithmetic.m; sourceTree = "<group>"; };
+		B3F831A51868E09A0088D934 /* RTSSubtractVectors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTSSubtractVectors.h; sourceTree = "<group>"; };
+		B3F831A61868E09A0088D934 /* RTSSubtractVectors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTSSubtractVectors.m; sourceTree = "<group>"; };
+		B3F831A91868E88D0088D934 /* RTSMultiplyConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTSMultiplyConstant.h; sourceTree = "<group>"; };
+		B3F831AA1868E88D0088D934 /* RTSMultiplyConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTSMultiplyConstant.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +122,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3AF3B17185E932B00BD7747 /* IOKit.framework in Frameworks */,
+				B3AF3B15185E91C900BD7747 /* AudioToolbox.framework in Frameworks */,
+				B3D2853F1858D98300A0C898 /* Accelerate.framework in Frameworks */,
 				B3D284F318563A5300A0C898 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,6 +164,9 @@
 		B3D284F118563A5300A0C898 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B3AF3B16185E932B00BD7747 /* IOKit.framework */,
+				B3AF3B14185E91C900BD7747 /* AudioToolbox.framework */,
+				B3D2853E1858D98300A0C898 /* Accelerate.framework */,
 				B3D284F218563A5300A0C898 /* Cocoa.framework */,
 				B3D2850718563A5400A0C898 /* XCTest.framework */,
 				B3D284F418563A5300A0C898 /* Other Frameworks */,
@@ -109,9 +187,41 @@
 		B3D284F818563A5300A0C898 /* RadioTools */ = {
 			isa = PBXGroup;
 			children = (
-				B3D284FF18563A5300A0C898 /* RadioTools.h */,
-				B3D2850018563A5400A0C898 /* RadioTools.m */,
+				B3D2852A18563BCE00A0C898 /* RTSAudioOutput.h */,
+				B3D2852B18563BCE00A0C898 /* RTSAudioOutput.m */,
+				B3D2851E18563AFD00A0C898 /* RTSFMDemodulator.h */,
+				B3D2851F18563AFD00A0C898 /* RTSFMDemodulator.m */,
+				B3F831911867B6150088D934 /* RTSMultiplyVectors.h */,
+				B3F831921867B6150088D934 /* RTSMultiplyVectors.m */,
+				B3F831A11868C69B0088D934 /* RTSVectorArithmetic.h */,
+				B3F831A21868C69B0088D934 /* RTSVectorArithmetic.m */,
+				B3F831951867B62A0088D934 /* RTSAddVectors.h */,
+				B3F831961867B62A0088D934 /* RTSAddVectors.m */,
+				B3F831A51868E09A0088D934 /* RTSSubtractVectors.h */,
+				B3F831A61868E09A0088D934 /* RTSSubtractVectors.m */,
+				B3F8319D1867B6550088D934 /* RTSFMDeemphasis.h */,
+				B3F831A91868E88D0088D934 /* RTSMultiplyConstant.h */,
+				B3F831AA1868E88D0088D934 /* RTSMultiplyConstant.m */,
+				B3F8319E1867B6550088D934 /* RTSFMDeemphasis.m */,
+				B3D2853A1858D35600A0C898 /* RTSFlowGraph.h */,
+				B3D2853B1858D35600A0C898 /* RTSFlowGraph.m */,
+				B3D2852218563B2000A0C898 /* RTSDecimator.h */,
+				B3D2852318563B2000A0C898 /* RTSDecimator.m */,
+				B3D2852618563B3500A0C898 /* RTSFIRFilter.h */,
+				B3D2852718563B3500A0C898 /* RTSFIRFilter.m */,
+				B3AF3AE8185E206900BD7747 /* RTSIIRFilter.h */,
+				B3AF3AE9185E206900BD7747 /* RTSIIRFilter.m */,
+				B3D2852E1856421D00A0C898 /* RTSRTLRadio.h */,
+				B3D2852F1856421D00A0C898 /* RTSRTLRadio.m */,
+				B3D28532185646C600A0C898 /* RTSComplexVector.h */,
+				B3D28533185646C600A0C898 /* RTSComplexVector.m */,
+				B3D2853618578CF900A0C898 /* RTSFloatVector.h */,
+				B3D2853718578CF900A0C898 /* RTSFloatVector.m */,
+				B3AF3B8B185F80FD00BD7747 /* RTSDataReceived.h */,
+				B3AF3B90185FAF9600BD7747 /* RTSInputConditioner.h */,
+				B3AF3B91185FAF9600BD7747 /* RTSInputConditioner.m */,
 				B3D284F918563A5300A0C898 /* Supporting Files */,
+				B3AF3B95185FBFF500BD7747 /* RadioTools.h */,
 			);
 			path = RadioTools;
 			sourceTree = "<group>";
@@ -119,6 +229,7 @@
 		B3D284F918563A5300A0C898 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B373FA0D1965C94800D11F18 /* readme.md */,
 				B3D284FA18563A5300A0C898 /* RadioTools-Info.plist */,
 				B3D284FB18563A5300A0C898 /* InfoPlist.strings */,
 				B3D284FE18563A5300A0C898 /* RadioTools-Prefix.pch */,
@@ -151,6 +262,24 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3D2852C18563BCE00A0C898 /* RTSAudioOutput.h in Headers */,
+				B3D28534185646C600A0C898 /* RTSComplexVector.h in Headers */,
+				B3D2852018563AFD00A0C898 /* RTSFMDemodulator.h in Headers */,
+				B3D2852818563B3500A0C898 /* RTSFIRFilter.h in Headers */,
+				B3D2853818578CF900A0C898 /* RTSFloatVector.h in Headers */,
+				B3D285301856421D00A0C898 /* RTSRTLRadio.h in Headers */,
+				B3D2853C1858D35600A0C898 /* RTSFlowGraph.h in Headers */,
+				B3D2852418563B2000A0C898 /* RTSDecimator.h in Headers */,
+				B3F831AB1868E88D0088D934 /* RTSMultiplyConstant.h in Headers */,
+				B3F831971867B62A0088D934 /* RTSAddVectors.h in Headers */,
+				B3F8319F1867B6550088D934 /* RTSFMDeemphasis.h in Headers */,
+				B3F831931867B6150088D934 /* RTSMultiplyVectors.h in Headers */,
+				B3F831A31868C69B0088D934 /* RTSVectorArithmetic.h in Headers */,
+				B3AF3AEA185E206900BD7747 /* RTSIIRFilter.h in Headers */,
+				B3AF3B92185FAF9600BD7747 /* RTSInputConditioner.h in Headers */,
+				B3F831A71868E09A0088D934 /* RTSSubtractVectors.h in Headers */,
+				B3AF3B8C185F80FD00BD7747 /* RTSDataReceived.h in Headers */,
+				B3AF3B96185FC0F900BD7747 /* RadioTools.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,7 +378,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3D2850118563A5400A0C898 /* RadioTools.m in Sources */,
+				B3D2852518563B2000A0C898 /* RTSDecimator.m in Sources */,
+				B3F831A41868C69B0088D934 /* RTSVectorArithmetic.m in Sources */,
+				B3D2852D18563BCE00A0C898 /* RTSAudioOutput.m in Sources */,
+				B3F831AC1868E88D0088D934 /* RTSMultiplyConstant.m in Sources */,
+				B3D28535185646C600A0C898 /* RTSComplexVector.m in Sources */,
+				B3D2853D1858D35700A0C898 /* RTSFlowGraph.m in Sources */,
+				B3F831A81868E09A0088D934 /* RTSSubtractVectors.m in Sources */,
+				B3D2852118563AFD00A0C898 /* RTSFMDemodulator.m in Sources */,
+				B3AF3B93185FAF9600BD7747 /* RTSInputConditioner.m in Sources */,
+				B3F831A01867B6550088D934 /* RTSFMDeemphasis.m in Sources */,
+				B3F831981867B62A0088D934 /* RTSAddVectors.m in Sources */,
+				B3D285311856421D00A0C898 /* RTSRTLRadio.m in Sources */,
+				B3AF3AEB185E206900BD7747 /* RTSIIRFilter.m in Sources */,
+				B3F831941867B6150088D934 /* RTSMultiplyVectors.m in Sources */,
+				B3D2853918578CF900A0C898 /* RTSFloatVector.m in Sources */,
+				B3D2852918563B3500A0C898 /* RTSFIRFilter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,8 +512,20 @@
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RadioTools/RadioTools-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/opt/local/include,
+				);
 				INFOPLIST_FILE = "RadioTools/RadioTools-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					/opt/local/lib/librtlsdr.a,
+					"/opt/local/lib/libusb-1.0.a",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Debug;
@@ -383,8 +539,20 @@
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RadioTools/RadioTools-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/opt/local/include,
+				);
 				INFOPLIST_FILE = "RadioTools/RadioTools-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					/opt/local/lib/librtlsdr.a,
+					"/opt/local/lib/libusb-1.0.a",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;
@@ -448,6 +616,7 @@
 				B3D2851918563A5400A0C898 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B3D2851A18563A5400A0C898 /* Build configuration list for PBXNativeTarget "RadioToolsTests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +625,7 @@
 				B3D2851C18563A5400A0C898 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
