@@ -64,6 +64,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B369E699196794D600405699 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
 		B373FA0D1965C94800D11F18 /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = SOURCE_ROOT; };
 		B3AF3AE8185E206900BD7747 /* RTSIIRFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTSIIRFilter.h; sourceTree = "<group>"; };
 		B3AF3AE9185E206900BD7747 /* RTSIIRFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTSIIRFilter.m; sourceTree = "<group>"; };
@@ -189,6 +190,7 @@
 			children = (
 				B3D2852A18563BCE00A0C898 /* RTSAudioOutput.h */,
 				B3D2852B18563BCE00A0C898 /* RTSAudioOutput.m */,
+				B369E699196794D600405699 /* LICENSE */,
 				B3D2851E18563AFD00A0C898 /* RTSFMDemodulator.h */,
 				B3D2851F18563AFD00A0C898 /* RTSFMDemodulator.m */,
 				B3F831911867B6150088D934 /* RTSMultiplyVectors.h */,
