@@ -83,7 +83,12 @@
 
     [outputHandle seekToEndOfFile];
 
-    [outputHandle writeData:self.vectorStorage];
+    for(int i = 0; i < self.sizeElements; i++)
+    {
+        NSString *floatString = [NSString stringWithFormat:@"%f\n", self.vector[i]];
+        [outputHandle writeData:[floatString dataUsingEncoding:NSUTF8StringEncoding]];
+    }
+ //   [outputHandle writeData:self.vectorStorage];
 }
 
 @end

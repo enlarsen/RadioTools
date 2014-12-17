@@ -82,7 +82,32 @@
 
 #pragma mark - Conditioner
 
+
+
 - (RTSComplexVector *)conditionInput:(NSData *)input
+{
+    syscall(SYS_kdebug_trace, APPSDBG_CODE(DBG_MACH_CHUD, 5) | DBG_FUNC_START, 0, 0, 0, 0);
+
+    self.sizeElements = [input length] / 2;
+
+    float addValue = 128.0f;
+    float multiplyValue = -1.0f;
+
+    vDSP_vfltu8([input bytes], 2, self.intermediate.realp, 1, self.sizeElements);
+    vDSP_vsmsa(self.intermediate.realp, 1, &multiplyValue, &addValue, self.output.realp, 1, self.sizeElements);
+
+    vDSP_vfltu8([input bytes] + 1, 2, self.intermediate.imagp, 1, self.sizeElements);
+    vDSP_vsmsa(self.intermediate.imagp, 1, &multiplyValue, &addValue, self.output.imagp, 1, self.sizeElements);
+
+    syscall(SYS_kdebug_trace, APPSDBG_CODE(DBG_MACH_CHUD, 5) | DBG_FUNC_END, 0, 0, 0, 0);
+
+    return self.output;
+    
+}
+
+// Previously conditionInput was like this:
+
+- (RTSComplexVector *)originalConditionInput:(NSData *)input
 {
     syscall(SYS_kdebug_trace, APPSDBG_CODE(DBG_MACH_CHUD, 5) | DBG_FUNC_START, 0, 0, 0, 0);
 
@@ -99,7 +124,7 @@
     syscall(SYS_kdebug_trace, APPSDBG_CODE(DBG_MACH_CHUD, 5) | DBG_FUNC_END, 0, 0, 0, 0);
 
     return self.output;
-
+    
 }
 
 @end

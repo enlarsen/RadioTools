@@ -26,6 +26,7 @@
 
 #import <RadioTools/RTSAudioOutput.h>
 #import <RadioTools/RTSFMDemodulator.h>
+#import <RadioTools/RTSAMDemodulator.h>
 #import <RadioTools/RTSFlowGraph.h>
 #import <RadioTools/RTSDecimator.h>
 #import <RadioTools/RTSFIRFilter.h>

@@ -1,8 +1,8 @@
 //
-//  RTSRTLRadio.h
+//  RTSAMDemodulator.h
 //  RadioTools
 //
-//  Created by Erik Larsen on 12/9/13.
+//  Created by Erik Larsen on 12/15/14.
 //  Copyright (c) 2013 Erik Larsen. All rights reserved.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -19,17 +19,12 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #import <Foundation/Foundation.h>
+#import <Accelerate/Accelerate.h>
+#import "RTSComplexVector.h"
+#import "RTSFloatVector.h"
 
-@interface RTSRTLRadio : NSObject
+@interface RTSAMDemodulator : NSObject
 
-@property (nonatomic) NSUInteger sampleRate;
-
-- (id)initWithDelegate:(id)delegate
-             frequency:(UInt32)frequency
-            sampleRate:(NSUInteger)sampleRate
-      outputBufferSize:(NSUInteger)outputBufferSize;
-- (void)start;
-- (void)stop;
-- (void)tuneToFrequency:(UInt32)frequency;
+- (RTSFloatVector *)demodulate:(RTSComplexVector *)input;
 
 @end

@@ -50,7 +50,9 @@ const int bufferSize = 512 * 16;
     return nil;
 }
 
-- (id)initWithDelegate:(id)delegate sampleRate:(NSUInteger)sampleRate
+- (id)initWithDelegate:(id)delegate
+             frequency:(UInt32)frequency
+            sampleRate:(NSUInteger)sampleRate
       outputBufferSize:(NSUInteger)outputBufferSize
 {
     if(self = [super init])
@@ -59,7 +61,8 @@ const int bufferSize = 512 * 16;
         _outputBufferSize = outputBufferSize;
 
         int result = rtlsdr_open(&_device, 0);
-        result = rtlsdr_set_center_freq(_device, 89896000); // 89.9 FM, Portland classical
+//        result = rtlsdr_set_center_freq(_device, 89896000); // 89.9 FM, Portland classical
+        result = rtlsdr_set_center_freq(_device, frequency);
         result = rtlsdr_set_tuner_gain_mode(_device, 0); // Autogain on
         result = rtlsdr_set_sample_rate(_device, (unsigned int)sampleRate);
 
@@ -67,6 +70,11 @@ const int bufferSize = 512 * 16;
 
     }
     return self;
+}
+
+- (void)tuneToFrequency:(UInt32)frequency
+{
+    rtlsdr_set_center_freq(_device, frequency);
 }
 
 - (void)allocateBuffers
