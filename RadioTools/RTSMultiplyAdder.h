@@ -1,8 +1,8 @@
 //
-//  RTSFloatVector.h
+//  RTSMultiplyAdder.h
 //  RadioTools
 //
-//  Created by Erik Larsen on 12/10/13.
+//  Created by Erik Larsen on 12/17/14.
 //  Copyright (c) 2013 Erik Larsen. All rights reserved.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -19,15 +19,11 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #import <Foundation/Foundation.h>
-#import <Accelerate/Accelerate.h>
+#import "RTSFloatVector.h"
 
-@interface RTSFloatVector : NSObject
+@interface RTSMultiplyAdder : NSObject
 
-@property (nonatomic, readonly) int sizeElements;
-@property (nonatomic, readonly) int sizeBytes;
-@property (nonatomic, readonly) float *vector;
+- (instancetype)initWithMultiplyFactor:(NSInteger)multiplyer adder:(NSInteger)adder;
+- (RTSFloatVector *)multiplyAdd:(RTSFloatVector *)input;
 
-- (id)initWithData:(float *)vector sizeElements:(NSUInteger)length;
-- (id)initWithSizeElements:(NSUInteger)sizeElements;
-- (void)writeData:(NSString *)filename;
 @end

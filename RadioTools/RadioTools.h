@@ -38,6 +38,7 @@
 #import <RadioTools/RTSAddVectors.h>
 #import <RadioTools/RTSMultiplyConstant.h>
 #import <RadioTools/RTSFMDeemphasis.h>
+#import <RadioTools/RTSMultiplyAdder.h>
 
 
 #endif
