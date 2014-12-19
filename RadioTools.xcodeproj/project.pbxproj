@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B31AF9FE1A436F5D008C664D /* RTSManchesterDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = B31AF9FC1A436F5D008C664D /* RTSManchesterDecoder.h */; };
+		B31AF9FF1A436F5D008C664D /* RTSManchesterDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = B31AF9FD1A436F5D008C664D /* RTSManchesterDecoder.m */; };
 		B391AC4A1A4209FE00D4AB2B /* RTSMultiplyAdder.m in Sources */ = {isa = PBXBuildFile; fileRef = B391AC491A4209FE00D4AB2B /* RTSMultiplyAdder.m */; };
 		B391AC4C1A420A1400D4AB2B /* RTSMultiplyAdder.h in Headers */ = {isa = PBXBuildFile; fileRef = B391AC4B1A420A1400D4AB2B /* RTSMultiplyAdder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B3AF3AEA185E206900BD7747 /* RTSIIRFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = B3AF3AE8185E206900BD7747 /* RTSIIRFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -68,6 +70,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B31AF9FC1A436F5D008C664D /* RTSManchesterDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTSManchesterDecoder.h; sourceTree = "<group>"; };
+		B31AF9FD1A436F5D008C664D /* RTSManchesterDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTSManchesterDecoder.m; sourceTree = "<group>"; };
 		B369E699196794D600405699 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
 		B373FA0D1965C94800D11F18 /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = SOURCE_ROOT; };
 		B391AC491A4209FE00D4AB2B /* RTSMultiplyAdder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTSMultiplyAdder.m; sourceTree = "<group>"; };
@@ -223,6 +227,8 @@
 				B3AF3AE9185E206900BD7747 /* RTSIIRFilter.m */,
 				B3AF3B90185FAF9600BD7747 /* RTSInputConditioner.h */,
 				B3AF3B91185FAF9600BD7747 /* RTSInputConditioner.m */,
+				B31AF9FC1A436F5D008C664D /* RTSManchesterDecoder.h */,
+				B31AF9FD1A436F5D008C664D /* RTSManchesterDecoder.m */,
 				B391AC4B1A420A1400D4AB2B /* RTSMultiplyAdder.h */,
 				B391AC491A4209FE00D4AB2B /* RTSMultiplyAdder.m */,
 				B3F831A91868E88D0088D934 /* RTSMultiplyConstant.h */,
@@ -278,6 +284,7 @@
 			files = (
 				B3D2852C18563BCE00A0C898 /* RTSAudioOutput.h in Headers */,
 				B3D28534185646C600A0C898 /* RTSComplexVector.h in Headers */,
+				B31AF9FE1A436F5D008C664D /* RTSManchesterDecoder.h in Headers */,
 				B3D2852018563AFD00A0C898 /* RTSFMDemodulator.h in Headers */,
 				B3D2852818563B3500A0C898 /* RTSFIRFilter.h in Headers */,
 				B3D2853818578CF900A0C898 /* RTSFloatVector.h in Headers */,
@@ -400,6 +407,7 @@
 				B3D2852D18563BCE00A0C898 /* RTSAudioOutput.m in Sources */,
 				B3F831AC1868E88D0088D934 /* RTSMultiplyConstant.m in Sources */,
 				B3D28535185646C600A0C898 /* RTSComplexVector.m in Sources */,
+				B31AF9FF1A436F5D008C664D /* RTSManchesterDecoder.m in Sources */,
 				B391AC4A1A4209FE00D4AB2B /* RTSMultiplyAdder.m in Sources */,
 				B3D2853D1858D35700A0C898 /* RTSFlowGraph.m in Sources */,
 				B3F831A81868E09A0088D934 /* RTSSubtractVectors.m in Sources */,

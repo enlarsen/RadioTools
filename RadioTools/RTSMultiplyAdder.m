@@ -72,6 +72,7 @@
     if(_sizeElements != sizeElements)
     {
         _sizeElements = sizeElements;
+        _output = nil;
     }
 }
 
