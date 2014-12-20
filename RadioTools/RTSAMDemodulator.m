@@ -91,7 +91,8 @@
     syscall(SYS_kdebug_trace, APPSDBG_CODE(DBG_MACH_CHUD, 2) | DBG_FUNC_START, 0, 0, 0, 0);
     self.sizeElements = input.sizeElements;
 
-    vDSP_vdist(input.realp, 1, input.imagp, 1, self.output.vector, 1, input.sizeElements);
+//    vDSP_vdist(input.realp, 1, input.imagp, 1, self.output.vector, 1, input.sizeElements);
+    vDSP_zvmags(input.splitComplexRef, 1, self.output.vector, 1, input.sizeElements);
 
     syscall(SYS_kdebug_trace, APPSDBG_CODE(DBG_MACH_CHUD, 2) | DBG_FUNC_END, 0, 0, 0, 0);
     return self.output;
