@@ -3,7 +3,7 @@
 //  RadioTools
 //
 //  Created by Erik Larsen on 12/15/14.
-//  Copyright (c) 2013 Erik Larsen. All rights reserved.
+//  Copyright (c) 2013 Erik Larsen.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
