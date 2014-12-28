@@ -142,7 +142,7 @@
     return _filterCoefficients;
 }
 
-- (id)initLowpassWithSampleRate:(NSUInteger)sampleRate cutoff:(NSUInteger)cutoff
+- (instancetype)initLowpassWithSampleRate:(NSUInteger)sampleRate cutoff:(NSUInteger)cutoff
                               Q:(NSUInteger)Q
 {
 
@@ -162,7 +162,7 @@
     return self;
 }
 
-- (id)initHighpassWithSampleRate:(NSUInteger)sampleRate cutoff:(NSUInteger)cutoff
+- (instancetype)initHighpassWithSampleRate:(NSUInteger)sampleRate cutoff:(NSUInteger)cutoff
                                Q:(NSUInteger)Q
 {
     self.Fs = sampleRate;
@@ -183,7 +183,7 @@
 
 }
 
-- (id)initBandpassWithSampleRate:(NSUInteger)sampleRate cutoffLow:(NSUInteger)cutoffLow
+- (instancetype)initBandpassWithSampleRate:(NSUInteger)sampleRate cutoffLow:(NSUInteger)cutoffLow
                       cutoffHigh:(NSUInteger)cutoffHigh
 {
     self.Fs = sampleRate;

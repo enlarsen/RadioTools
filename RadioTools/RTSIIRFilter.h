@@ -24,15 +24,15 @@
 
 @interface RTSIIRFilter : NSObject
 
-- (id)initLowpassWithSampleRate:(NSUInteger)sampleRate
+- (instancetype)initLowpassWithSampleRate:(NSUInteger)sampleRate
                          cutoff:(NSUInteger)cutoff
                               Q:(NSUInteger)Q;
 
-- (id)initHighpassWithSampleRate:(NSUInteger)sampleRate
+- (instancetype)initHighpassWithSampleRate:(NSUInteger)sampleRate
                           cutoff:(NSUInteger)cutoff
                                Q:(NSUInteger)Q;
 
-- (id)initBandpassWithSampleRate:(NSUInteger)sampleRate
+- (instancetype)initBandpassWithSampleRate:(NSUInteger)sampleRate
                        cutoffLow:(NSUInteger)cutoffLow
                       cutoffHigh:(NSUInteger)cutoffHigh;
 

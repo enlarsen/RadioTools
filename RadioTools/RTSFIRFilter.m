@@ -1,9 +1,9 @@
 //
-//  RTSLowPassFilter.m
+//  RTSFIRFilter.m
 //  RadioTools
 //
 //  Created by Erik Larsen on 12/9/13.
-//  Copyright (c) 2013 Erik Larsen. All rights reserved.
+//  Copyright (c) 2013 Erik Larsen.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -22,7 +22,7 @@
 // at runtime.
 
 
-// TODO: Compute filter time to zero in on pathalogical parameters
+// TODO: Compute filter time to zero on pathalogical parameters
 
 #include <sys/syscall.h>
 #include <sys/kdebug.h>
@@ -48,7 +48,7 @@
 
 @implementation RTSFIRFilter
 
-- (id)initLowpassWithSampleRate:(int)sampleRate transitionWidth:(int)transitionWidth
+- (instancetype)initLowpassWithSampleRate:(int)sampleRate transitionWidth:(int)transitionWidth
                          cutoff:(int)cutoff
 {
     if(self = [super init])
@@ -61,7 +61,7 @@
     return self;
 }
 
-- (id)initHighpassWithSampleRate:(int)sampleRate transitionWidth:(int)transitionWidth
+- (instancetype)initHighpassWithSampleRate:(int)sampleRate transitionWidth:(int)transitionWidth
                           cutoff:(int)cutoff
 {
     if(self = [super init])
@@ -74,7 +74,7 @@
    return self;
 }
 
-- (id)initBandpassWithSampleRate:(int)sampleRate transitionWidth:(int)transitionWidth
+- (instancetype)initBandpassWithSampleRate:(int)sampleRate transitionWidth:(int)transitionWidth
                        cutoffLow:(int)cutoffLow cutoffHigh:(int)cutoffHigh
 {
     if(self = [super init])

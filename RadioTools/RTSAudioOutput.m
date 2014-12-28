@@ -73,7 +73,7 @@ const int audioBufferSize = 20000;
     return _temporaryBuffer;
 }
 
-- (id)initWithSampleRate:(UInt32)rate
+- (instancetype)initWithSampleRate:(UInt32)rate
 {
     if(self = [super init])
     {
@@ -132,7 +132,7 @@ const int audioBufferSize = 20000;
 {
     syscall(SYS_kdebug_trace, APPSDBG_CODE(DBG_MACH_CHUD, 1) | DBG_FUNC_START, 0, 0, 0, 0);
     static bool started = NO;
-    static uint64_t startTime = 0ULL;
+//    static uint64_t startTime = 0ULL;
 
 
     self.sizeElements = audio.sizeElements;

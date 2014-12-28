@@ -24,7 +24,7 @@
 
 @interface RTSDecimator : NSObject
 
-- (id)initWithFactor:(int)factor;
+- (instancetype)initWithFactor:(int)factor NS_DESIGNATED_INITIALIZER;
 
 - (RTSComplexVector *)decimateComplex:(RTSComplexVector *)input;
 - (RTSFloatVector *)decimateFloat:(RTSFloatVector *)input;

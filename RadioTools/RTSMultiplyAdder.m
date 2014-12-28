@@ -36,7 +36,7 @@
 
 @implementation RTSMultiplyAdder
 
-- (id)init
+- (instancetype)init
 {
     self = [self initWithMultiplyFactor:1.0 adder:0.0];
     return self;

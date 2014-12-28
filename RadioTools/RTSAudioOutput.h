@@ -25,7 +25,7 @@
 @interface RTSAudioOutput : NSObject
 
 - (void)playSoundBuffer:(RTSFloatVector *)audio;
-- (id)initWithSampleRate:(UInt32)rate;
+- (instancetype)initWithSampleRate:(UInt32)rate NS_DESIGNATED_INITIALIZER;
 
 
 @end

@@ -38,12 +38,12 @@
 
 @implementation RTSComplexVector
 
-- (id)init __attribute__((unavailable("init not available")));
+- (instancetype)init __attribute__((unavailable("init not available")));
 {
     return nil;
 }
 
-- (id)initWithSplitComplex:(DSPSplitComplex)splitComplex sizeElements:(NSUInteger)length
+- (instancetype)initWithSplitComplex:(DSPSplitComplex)splitComplex sizeElements:(NSUInteger)length
 {
     if(splitComplex.realp && splitComplex.imagp)
     {
@@ -58,7 +58,7 @@
  }
 
 // Designated initializer
-- (id)initWithReal:(float *)real imaginary:(float *)imaginary sizeElements:(NSUInteger)length
+- (instancetype)initWithReal:(float *)real imaginary:(float *)imaginary sizeElements:(NSUInteger)length
 {
     if(self = [super init])
     {
@@ -73,7 +73,7 @@
     return self;
 }
 
-- (id)initWithSizeElements:(NSUInteger)sizeElements
+- (instancetype)initWithSizeElements:(NSUInteger)sizeElements
 {
     if(self = [super init])
     {

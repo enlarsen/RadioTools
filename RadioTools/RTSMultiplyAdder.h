@@ -23,7 +23,7 @@
 
 @interface RTSMultiplyAdder : NSObject
 
-- (instancetype)initWithMultiplyFactor:(NSInteger)multiplyer adder:(NSInteger)adder;
+- (instancetype)initWithMultiplyFactor:(NSInteger)multiplyer adder:(NSInteger)adder NS_DESIGNATED_INITIALIZER;
 - (RTSFloatVector *)multiplyAdd:(RTSFloatVector *)input;
 
 @end

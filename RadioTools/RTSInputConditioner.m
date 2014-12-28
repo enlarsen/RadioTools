@@ -35,7 +35,7 @@
 
 @implementation RTSInputConditioner
 
-- (id)init
+- (instancetype)init
 {
     return self = [super init];
 }

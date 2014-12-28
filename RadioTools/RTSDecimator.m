@@ -39,12 +39,12 @@
 
 @implementation RTSDecimator
 
-- (id)init
+- (instancetype)init
 {
-    return nil;
+    return [self initWithFactor:1];
 }
 
-- (id)initWithFactor:(int)factor
+- (instancetype)initWithFactor:(int)factor
 {
     if(self = [super init])
     {

@@ -1,9 +1,9 @@
 //
-//  RTSLowPassFilter.h
+//  RTSFIRFilter.h
 //  RadioTools
 //
 //  Created by Erik Larsen on 12/9/13.
-//  Copyright (c) 2013 Erik Larsen. All rights reserved.
+//  Copyright (c) 2013 Erik Larsen.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -26,12 +26,12 @@
 
 @property (nonatomic) int numberTaps;
 
-- (id)initLowpassWithSampleRate:(int)sampleRate transitionWidth:(int)transitionWidth
-                    cutoff:(int)cutoff;
-- (id)initHighpassWithSampleRate:(int)sampleRate transitionWidth:(int)transitionWidth
-                    cutoff:(int)cutoff;
-- (id)initBandpassWithSampleRate:(int)sampleRate transitionWidth:(int)transitionWidth
-                       cutoffLow:(int)cutoffLow cutoffHigh:(int)cutoffHigh;
+- (instancetype)initLowpassWithSampleRate:(int)sampleRate transitionWidth:(int)transitionWidth
+                    cutoff:(int)cutoff NS_DESIGNATED_INITIALIZER;
+- (instancetype)initHighpassWithSampleRate:(int)sampleRate transitionWidth:(int)transitionWidth
+                    cutoff:(int)cutoff NS_DESIGNATED_INITIALIZER;
+- (instancetype)initBandpassWithSampleRate:(int)sampleRate transitionWidth:(int)transitionWidth
+                       cutoffLow:(int)cutoffLow cutoffHigh:(int)cutoffHigh NS_DESIGNATED_INITIALIZER;
 - (RTSComplexVector *)filterComplex:(RTSComplexVector *)input;
 - (RTSFloatVector *)filterFloat:(RTSFloatVector *)input;
 

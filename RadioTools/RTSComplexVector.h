@@ -30,8 +30,8 @@
 @property (nonatomic, readonly) int sizeElements;
 @property (nonatomic, readonly) int sizeBytes;
 
-- (id)initWithSplitComplex:(DSPSplitComplex)splitComplex sizeElements:(NSUInteger)length;
-- (id)initWithReal:(float *)real imaginary:(float *)imaginary sizeElements:(NSUInteger)length;
-- (id)initWithSizeElements:(NSUInteger)sizeElements;
+- (instancetype)initWithSplitComplex:(DSPSplitComplex)splitComplex sizeElements:(NSUInteger)length;
+- (instancetype)initWithReal:(float *)real imaginary:(float *)imaginary sizeElements:(NSUInteger)length NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithSizeElements:(NSUInteger)sizeElements NS_DESIGNATED_INITIALIZER;
 
 @end

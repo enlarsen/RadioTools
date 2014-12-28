@@ -30,12 +30,12 @@
 
 @implementation RTSFloatVector
 
-- (id)init __attribute__((unavailable("init not available")));
+- (instancetype)init __attribute__((unavailable("init not available")));
 {
     return nil;
 }
 
-- (id)initWithData:(float *)vector sizeElements:(NSUInteger)length
+- (instancetype)initWithData:(float *)vector sizeElements:(NSUInteger)length
 {
     if(self = [super init])
     {
@@ -45,7 +45,7 @@
     return self;
 }
 
-- (id)initWithSizeElements:(NSUInteger)sizeElements
+- (instancetype)initWithSizeElements:(NSUInteger)sizeElements
 {
     if(self = [super init])
     {

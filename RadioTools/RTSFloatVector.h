@@ -27,7 +27,7 @@
 @property (nonatomic, readonly) int sizeBytes;
 @property (nonatomic, readonly) float *vector;
 
-- (id)initWithData:(float *)vector sizeElements:(NSUInteger)length;
-- (id)initWithSizeElements:(NSUInteger)sizeElements;
+- (instancetype)initWithData:(float *)vector sizeElements:(NSUInteger)length NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithSizeElements:(NSUInteger)sizeElements NS_DESIGNATED_INITIALIZER;
 - (void)writeData:(NSString *)filename;
 @end

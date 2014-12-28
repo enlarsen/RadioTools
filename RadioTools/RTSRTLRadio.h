@@ -24,10 +24,10 @@
 
 @property (nonatomic) NSUInteger sampleRate;
 
-- (id)initWithDelegate:(id)delegate
+- (instancetype)initWithDelegate:(id)delegate
              frequency:(UInt32)frequency
             sampleRate:(NSUInteger)sampleRate
-      outputBufferSize:(NSUInteger)outputBufferSize;
+      outputBufferSize:(NSUInteger)outputBufferSize NS_DESIGNATED_INITIALIZER;
 - (void)start;
 - (void)stop;
 - (void)tuneToFrequency:(UInt32)frequency;

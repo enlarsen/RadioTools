@@ -45,12 +45,12 @@ const int bufferSize = 512 * 16;
 @implementation RTSRTLRadio
 
 // TODO: Fix to be unavailable
-- (id)init
+- (instancetype)init
 {
     return nil;
 }
 
-- (id)initWithDelegate:(id)delegate
+- (instancetype)initWithDelegate:(id)delegate
              frequency:(UInt32)frequency
             sampleRate:(NSUInteger)sampleRate
       outputBufferSize:(NSUInteger)outputBufferSize
@@ -234,7 +234,7 @@ const int bufferSize = 512 * 16;
     dispatch_sync(self.bufferLockQueue, ^{
         if([self.freeBuffers count])
         {
-            outputBuffer = (NSMutableData *)[self.freeBuffers objectAtIndex:0];
+            outputBuffer = (NSMutableData *)(self.freeBuffers)[0];
             [self.freeBuffers removeObjectAtIndex:0];
         }
         else
