@@ -61,9 +61,14 @@ const int bufferSize = 512 * 16;
         _outputBufferSize = outputBufferSize;
 
         int result = rtlsdr_open(&_device, 0);
+        if(result == -1)
+        {
+            return nil;
+        }
 //        result = rtlsdr_set_center_freq(_device, 89896000); // 89.9 FM, Portland classical
-        result = rtlsdr_set_center_freq(_device, frequency);
         result = rtlsdr_set_tuner_gain_mode(_device, 0); // Autogain on
+        result = rtlsdr_reset_buffer(_device);
+        result = rtlsdr_set_center_freq(_device, frequency);
         result = rtlsdr_set_sample_rate(_device, (unsigned int)sampleRate);
 
         [self allocateBuffers];
